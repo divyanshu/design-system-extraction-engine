@@ -1,0 +1,22 @@
+# Component Manifest Template
+# Copy this to targets/<target-name>/manifest.yaml when starting a new target
+# See .planning/design-system-replication-workflow.md for field definitions
+
+target_system:
+  name: ""
+  version: ""
+  sources_doc: "./sources.md"
+
+components: []
+# Example entry:
+# - name: "Button"
+#   target_system_name: "Button"
+#   category: "Actions"
+#   variants: []
+#   mapping_type: "direct_match"  # direct_match | partial_match | structural_mismatch | target_only | bolt_on
+#   shadcn_equivalent: "Button"
+#   confidence: "high"            # high | medium | low
+#   confidence_notes: ""
+#   sources_used: []
+#   sources_missing: []
+#   replication_status: "not_started"  # not_started | in_progress | complete | signed_off | blocked

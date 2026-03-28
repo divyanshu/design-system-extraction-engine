@@ -1,0 +1,72 @@
+/*
+ * Example token mapping — Acme Corp Design System
+ *
+ * Convention:
+ * - Core shadcn tokens (--background, --foreground, --primary, etc.) are overridden directly
+ * - Target-specific tokens use the --{target}- prefix (here: --acme-)
+ * - Pattern: --acme-{component}-{variant}-{property}[-{state}]
+ */
+
+:root {
+  /* === Core shadcn overrides === */
+  --background: 0 0% 100%;
+  --foreground: 220 14% 20%;
+  --primary: 220 90% 50%;
+  --primary-foreground: 0 0% 100%;
+  --destructive: 0 72% 51%;
+  --muted: 220 14% 96%;
+  --muted-foreground: 220 9% 46%;
+  --border: 220 13% 91%;
+  --ring: 220 90% 50%;
+  --radius: 0.375rem;
+
+  /* === Acme Button tokens === */
+  --acme-button-primary-bg: 220 90% 50%;
+  --acme-button-primary-bg-hover: 220 90% 45%;
+  --acme-button-primary-text: 0 0% 100%;
+  --acme-button-secondary-bg: 220 14% 96%;
+  --acme-button-secondary-bg-hover: 220 14% 91%;
+  --acme-button-secondary-text: 220 14% 20%;
+  --acme-button-destructive-bg: 0 72% 51%;
+  --acme-button-destructive-bg-hover: 0 72% 46%;
+  --acme-button-destructive-text: 0 0% 100%;
+  --acme-button-disabled-bg: 220 14% 96%;
+  --acme-button-disabled-text: 220 9% 64%;
+
+  /* === Acme StatusBanner tokens === */
+  --acme-banner-info-bg: 220 90% 96%;
+  --acme-banner-info-border: 220 90% 50%;
+  --acme-banner-info-icon: 220 90% 50%;
+  --acme-banner-success-bg: 142 72% 96%;
+  --acme-banner-success-border: 142 72% 40%;
+  --acme-banner-success-icon: 142 72% 40%;
+  --acme-banner-warning-bg: 38 92% 96%;
+  --acme-banner-warning-border: 38 92% 50%;
+  --acme-banner-warning-icon: 38 92% 40%;
+  --acme-banner-error-bg: 0 72% 96%;
+  --acme-banner-error-border: 0 72% 51%;
+  --acme-banner-error-icon: 0 72% 51%;
+}
+
+.dark {
+  --background: 220 14% 10%;
+  --foreground: 220 14% 96%;
+  --primary: 220 90% 60%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 220 14% 16%;
+  --muted-foreground: 220 9% 64%;
+  --border: 220 13% 20%;
+
+  --acme-button-primary-bg: 220 90% 60%;
+  --acme-button-primary-bg-hover: 220 90% 55%;
+  --acme-button-secondary-bg: 220 14% 16%;
+  --acme-button-secondary-bg-hover: 220 14% 22%;
+  --acme-button-secondary-text: 220 14% 96%;
+  --acme-button-disabled-bg: 220 14% 16%;
+  --acme-button-disabled-text: 220 9% 46%;
+
+  --acme-banner-info-bg: 220 90% 14%;
+  --acme-banner-success-bg: 142 72% 12%;
+  --acme-banner-warning-bg: 38 92% 12%;
+  --acme-banner-error-bg: 0 72% 14%;
+}

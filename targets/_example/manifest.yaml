@@ -1,0 +1,43 @@
+# Example manifest — Acme Corp Design System
+# This is illustrative. See templates/manifest.yaml for the empty starter.
+
+components:
+  - name: "Button"
+    target_system_name: "AcmeButton"
+    category: "Actions"
+    variants:
+      - variant: [primary, secondary, destructive, ghost]
+      - size: [sm, md, lg]
+    mapping_type: "direct_match"
+    shadcn_equivalent: "Button"
+    confidence: "high"
+    confidence_notes: "All variants documented in public Storybook. Token names match."
+    sources_used: [storybook, tokens-npm]
+    sources_missing: [figma]
+    replication_status: "not_started"
+
+  - name: "Dialog"
+    target_system_name: "AcmeDialog"
+    category: "Overlays"
+    variants:
+      - width: [small, medium, large]
+    mapping_type: "partial_match"
+    shadcn_equivalent: "Dialog"
+    confidence: "medium"
+    confidence_notes: "Target has explicit Header/Body/Footer sub-components. shadcn Dialog uses free-form children."
+    sources_used: [storybook, tokens-npm]
+    sources_missing: [figma, source-code]
+    replication_status: "not_started"
+
+  - name: "StatusBanner"
+    target_system_name: "AcmeStatusBanner"
+    category: "Messaging"
+    variants:
+      - type: [info, success, warning, error]
+    mapping_type: "target_only"
+    shadcn_equivalent: null
+    confidence: "medium"
+    confidence_notes: "Visual structure clear from Storybook. Auto-icon per type inferred but not documented."
+    sources_used: [storybook]
+    sources_missing: [tokens-npm, figma, source-code]
+    replication_status: "not_started"
