@@ -369,7 +369,7 @@ issues:
 The repo separates **core machinery** (skills, templates, shared tooling) from **per-target work** (extraction output, replicated components, validation). Each target system lives in its own directory under `targets/`, making it easy to spin up new replication experiments, archive stale ones, or compare across systems.
 
 ```
-design-system-replica/
+design-system-extraction-engine/
 ├── README.md                              # Setup, usage, how to run with an agent
 │
 ├── skills/                                # Core agent-readable skill files (target-agnostic)
@@ -585,7 +585,7 @@ Two repos with a one-way relationship. The extractor runs a simple export script
 
 ```bash
 # 1. Clone the output repo (once)
-git clone git@github.com:yourorg/{target}-components.git
+git clone git@github.com:divyanshu/{target}-components.git
 
 # 2. Copy the files they need into their Next.js project
 cp {target}-components/components/button.tsx src/components/{target}/

@@ -17,8 +17,8 @@ The workflow is iterative — each phase feeds back into earlier phases as confi
 
 ```bash
 # 1. Clone this repo
-git clone https://github.com/yourorg/design-system-extractor.git
-cd design-system-extractor
+git clone https://github.com/divyanshu/design-system-extraction-engine.git
+cd design-system-extraction-engine
 
 # 2. Create a new target
 cp -r templates/ targets/{your-target}/
@@ -37,7 +37,7 @@ See `targets/_example/` for a synthetic reference showing the expected file stru
 ## Directory Structure
 
 ```
-design-system-extractor/
+design-system-extraction-engine/
 ├── skills/                    # Agent-readable workflow guides (target-agnostic)
 │   ├── 01-survey-target-system.md
 │   ├── 03-extract-anatomy.md
